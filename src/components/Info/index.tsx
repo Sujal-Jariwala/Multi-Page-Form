@@ -1,6 +1,8 @@
 import { ChangeEvent } from "react";
 import { ComponentPropsType } from "../../types";
-
+import personIcon from '../../assets/images/profile.png'
+import emailIcon from '../../assets/images/mail.png'
+import phoneIcon from '../../assets/images/call.png'
 const Info = (props: ComponentPropsType) => {
 	const { data, setData, errors } = props;
 
@@ -16,7 +18,7 @@ const Info = (props: ComponentPropsType) => {
 			<h2>Personal info</h2>
 			<p>Please provide your name, email, address, and phone number.</p>
 			<div className="input__group">
-				<label htmlFor="name">Name</label>
+				<label htmlFor="name"><img src={personIcon} alt="" className="icons" />Name: <span className="red-mark">*</span></label>
 				<input
 					type="text"
 					placeholder="e.g. Stephen King"
@@ -28,7 +30,7 @@ const Info = (props: ComponentPropsType) => {
 				{errors.name && <p className="error">{errors.name}</p>}
 			</div>
 			<div className="input__group">
-				<label htmlFor="email">Email Address</label>
+				<label htmlFor="email"><img src={emailIcon} alt="" className="icons"/>Email Address: <span className="red-mark">*</span></label>
 				<input
 					type="text"
 					placeholder="e.g. Stephenking@lorem.com"
@@ -40,7 +42,7 @@ const Info = (props: ComponentPropsType) => {
 				{errors.email && <p className="error">{errors.email}</p>}
 			</div>
 			<div className="input__group">
-				<label htmlFor="phone">Phone Number</label>
+				<label htmlFor="phone"><img src={phoneIcon} alt="" className="icons"/>Phone Number: <span className="red-mark">*</span></label>
 				<input
 					type="tel"
 					placeholder="e.g. +1 234 567 890"
