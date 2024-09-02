@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# Front-End Mentor - Multi-Step form solution
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a solution to the [Multi-step form challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/multistep-form-YVAnSdqQBJ/hub). Frontend Mentor challenges help you improve your Frontend Skills by giving you realistic challenges.
 
-Currently, two official plugins are available:
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### The challenge
 
-## Expanding the ESLint configuration
+Users Should be able to :
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+-   Complete each step of the sequence.
+-   See a summary of thier selections on the final step and confirm their order.
+-   View the optimal layout for the interface depending on the device's screen size.
+-   See hover and focus state for all interactive elements on the page.
 
-- Configure the top-level `parserOptions` property like this:
+### Screenshot
+![](./design/desktop-preview.jpg)
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+### Links
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+-   Solution URL: [GITHUB](https://github.com/Sujal-Jariwala/Multi-Page-Form)
+-   Live Site URL: [GITHUB](https://sujal-jariwala.github.io/Multi-Page-Form/)
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+
+## My Process
+
+### This project was built with
+
+-   HTML
+-   CSS custom properties
+-   CSS Flexbox
+-   CSS grid
+-   SASS/SCSS
+-   Typescript
+-   Vite
+-   npm YUP package
+-   [React](https://react.dev/) - JS library
+
+## My Links
+-   Github - [Sujal-Jariwala](https://github.com/Sujal-Jariwala)
+-   Frontend Mentor - [@Sujal-Jariwala](https://www.frontendmentor.io/profile/Sujal-Jariwala)
